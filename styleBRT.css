@@ -1,4 +1,4 @@
-/* Configuración básica de la página */
+/* Fonts i colors globals */
 * {
     margin: 0;
     padding: 0;
@@ -7,30 +7,25 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1e1e1e; /* Fondo gris oscuro */
-    color: #f4f4f4;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Estilos de los encabezados */
 h1, h2, h3 {
-    color: #e2e2e2;
+    color: #2a2a2a;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-/* Estilos para el header */
+/* Estils del header */
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* Fondo translúcido */
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para elevar visualmente */
-    margin-bottom: 20px;
 }
 
-/* Estilos del menú de navegación */
 nav ul {
     list-style: none;
     text-align: center;
@@ -45,28 +40,23 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 8px 12px;
-    border-radius: 5px; /* Bordes redondeados para los enlaces */
-    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #007bff; /* Fondo azul en hover */
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-/* Estilos generales del contenido principal */
+/* Estils generals per al cos principal */
 main {
     max-width: 1200px;
     margin: 20px auto;
-    background-color: #2a2a2a; /* Fondo gris medio */
-    color: #f4f4f4;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección de bienvenida */
+/* Secció de Benvinguda */
 .inici {
     text-align: center;
     margin-bottom: 30px;
@@ -79,7 +69,7 @@ main {
 
 .inici p {
     font-size: 18px;
-    color: #ccc;
+    color: #555;
     margin: 20px 0;
 }
 
@@ -89,7 +79,7 @@ main {
     border-radius: 10px;
 }
 
-/* Sección sobre mí */
+/* Secció sobre mi */
 .sobre-mi {
     margin-bottom: 40px;
 }
@@ -104,8 +94,14 @@ main {
 
 .sobre-mi p {
     font-size: 18px;
-    color: #ccc;
+    color: #555;
     margin-bottom: 20px;
+}
+
+.sobre-mi h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .sobre-mi ul {
@@ -115,11 +111,11 @@ main {
 
 .sobre-mi ul li {
     font-size: 18px;
-    color: #ccc;
+    color: #555;
     margin-bottom: 5px;
 }
 
-/* Sección de proyectos */
+/* Secció de projectes */
 .projectes {
     margin-top: 40px;
 }
@@ -133,11 +129,11 @@ main {
 }
 
 .projecte {
-    background-color: #333;
+    background-color: #fafafa;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projecte h3 {
@@ -148,27 +144,27 @@ main {
 
 .projecte article {
     font-size: 18px;
-    color: #ccc;
+    color: #555;
 }
 
-/* Detalles del proyecto */
+/* Detalls del projecte */
 .projecte-detalls {
-    background-color: #444;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 .projecte-detalls h3 {
     font-size: 24px;
-    color: #f4f4f4;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .projecte-detalls p {
     font-size: 18px;
-    color: #ccc;
+    color: #555;
     margin-bottom: 10px;
 }
 
@@ -182,7 +178,7 @@ main {
     text-decoration: underline;
 }
 
-/* Diseño responsivo para móviles */
+/* Responsive design: ajustar al mòbil */
 @media (max-width: 768px) {
     header {
         padding: 15px 0;
@@ -206,4 +202,56 @@ main {
     main {
         padding: 10px;
     }
+
+    /* Estils del Footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+        border-top: 2px solid #007bff;
+    }   
+
+    footer .contacte {
+        margin-bottom: 20px;
+    }
+
+    footer h2 {
+        font-size: 24px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 16px;
+        color: #fff;
+    }
+
+    footer ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer ul li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    footer ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    footer ul li a:hover {
+        text-decoration: underline;
+    }
+
+    footer p:last-child {
+        font-size: 14px;
+        color: #bbb;
+        margin-top: 20px;
+    }
+
 }
