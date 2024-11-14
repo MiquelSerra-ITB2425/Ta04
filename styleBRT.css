@@ -1,0 +1,205 @@
+/* Fonts i colors globals */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estils del header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estils generals per al cos principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Secció de Benvinguda */
+.inici {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inici h1 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+.inici p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.inici img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Secció sobre mi */
+.sobre-mi {
+    margin-bottom: 40px;
+}
+
+.sobre-mi h2 {
+    font-size: 26px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sobre-mi p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sobre-mi h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre-mi ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.sobre-mi ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Secció de projectes */
+.projectes {
+    margin-top: 40px;
+}
+
+.projectes h2 {
+    font-size: 26px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.projecte {
+    background-color: #fafafa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projecte h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.projecte article {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Detalls del projecte */
+.projecte-detalls {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.projecte-detalls h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projecte-detalls p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.projecte-detalls .enllaç a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.projecte-detalls .enllaç a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design: ajustar al mòbil */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .inici img {
+        width: 100%;
+        max-width: none;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
