@@ -292,3 +292,7 @@ form {
 .toggle-form:hover {
     background-color: #003d80;
 }
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
