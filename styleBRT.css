@@ -249,3 +249,46 @@ footer a:hover {
         padding: 15px 0;
     }
 }
+/* Formulari de contacte */
+/* Contenedor centrado para el formulario */
+.container-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Ocultar formulario por defecto */
+.hidden {
+    display: none;
+}
+
+/* Mostrar formulario con transiciones */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #0056b3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Botón para mostrar/ocultar el formulario */
+.toggle-form {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-form:hover {
+    background-color: #003d80;
+}
