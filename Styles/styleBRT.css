@@ -85,7 +85,8 @@ main {
 
 .inici img {
     width: 100%;
-    max-width: 600px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 10px;
 }
 
