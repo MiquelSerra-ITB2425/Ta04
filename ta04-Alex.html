@@ -115,6 +115,12 @@
 
             themeToggle.addEventListener('click', () => {
                 document.body.classList.toggle('dark-theme');
+                document.querySelector('header').classList.toggle('dark-theme');
+                document.querySelectorAll('nav ul li a').forEach(el => el.classList.toggle('dark-theme'));
+                document.querySelector('main').classList.toggle('dark-theme');
+                document.querySelector('footer').classList.toggle('dark-theme');
+                document.querySelector('form').classList.toggle('dark-theme');
+                document.querySelector('.toggle-form').classList.toggle('dark-theme');
             });
         });
 
