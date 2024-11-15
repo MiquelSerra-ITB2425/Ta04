@@ -1,0 +1,108 @@
+/* Configuración básica de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Fondo claro */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contacto .form-group {
+    margin-bottom: 15px;
+}
+
+.formulario-contacto label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.formulario-contacto textarea {
+    resize: none;
+}
+
+.btn-enviar {
+    background-color: #0056b3;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #004085; /* Azul más oscuro */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 16px;
+}

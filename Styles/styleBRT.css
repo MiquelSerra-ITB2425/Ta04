@@ -1,0 +1,251 @@
+/* Configuración básica de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5; /* Fondo más claro */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilos de los encabezados */
+h1, h2, h3 {
+    color: #2a2a2a;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    text-decoration: none;
+}
+
+/* Estilos generales del contenido principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Sección de bienvenida */
+.inici {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inici h1 {
+    font-size: 32px;
+    color: #007bff;
+}
+
+.inici p {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.inici img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Sección sobre mí */
+.sobre-mi {
+    margin-bottom: 40px;
+}
+
+.sobre-mi h2 {
+    font-size: 26px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sobre-mi p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sobre-mi ul {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.sobre-mi ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Sección de proyectos */
+.projectes {
+    margin-top: 40px;
+}
+
+.projectes h2 {
+    font-size: 26px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Diseño unificado de cada proyecto */
+.projecte {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.projecte img {
+    border-radius: 10px;
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    max-width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.projecte h3 {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.projecte article {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Uniformidad en Detalles del proyecto */
+.projecte-detalls {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.projecte-detalls h3, .projecte h3 {
+    font-size: 22px;
+    color: #007bff;
+}
+
+.projecte-detalls p, .projecte article {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Enlace de proyectos */
+.projecte-detalls .enllaç a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.projecte-detalls .enllaç a:hover {
+    text-decoration: underline;
+}
+
+/* Footer de contacto */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+/* Diseño responsivo para móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .inici img {
+        width: 100%;
+        max-width: none;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
