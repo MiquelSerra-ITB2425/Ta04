@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Proyecto</title>
+    <link rel="stylesheet" href="../Styles/style2.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const projectId = params.get("id");
+            const projectData = {
+                1: { title: "Proyecto A", description: "Detalles completos del Proyecto A." },
+                2: { title: "Proyecto B", description: "Detalles completos del Proyecto B." },
+                3: { title: "Proyecto C", description: "Detalles completos del Proyecto C." },
+            };
+
+            const project = projectData[projectId] || { title: "Proyecto no encontrado", description: "No se pudo cargar la información." };
+            document.getElementById("title").innerText = project.title;
+            document.getElementById("description").innerText = project.description;
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Cargando...</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="projects.html">Proyectos</a>
+        </nav>
+    </header>
+    <main>
+        <p id="description"></p>
+    </main>
+</body>
+</html>
