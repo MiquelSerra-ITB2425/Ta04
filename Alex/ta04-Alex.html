@@ -99,23 +99,24 @@
                 toggleButton.addEventListener('click', () => {
                     form.classList.toggle('hidden');
                 });
-
-                // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'una secció
-                const sections = document.querySelectorAll('section');
-                sections.forEach(section => {
-                    section.addEventListener('mouseenter', () => {
-                        section.style.backgroundColor = '#f0f0f0';
-                    });
-                    section.addEventListener('mouseleave', () => {
-                        section.style.backgroundColor = '';
-                    });
+            // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'un projecte
+            const projectes = document.querySelectorAll('.projecte, .detalls-projecte');
+            projectes.forEach(projecte => {
+                projecte.addEventListener('mouseenter', () => {
+                    projecte.style.backgroundColor = '#f0f0f0';
                 });
-
-                // Funcionalitat 3: Mostrar un missatge emergent quan es fa clic en un botó
-                const alertButton = document.getElementById('alertButton');
-                alertButton.addEventListener('click', () => {
-                    alert('Gràcies per visitar el meu portafolis!');
+                projecte.addEventListener('mouseleave', () => {
+                    projecte.style.backgroundColor = '';
                 });
+            });
+
+            // Funcionalitat 3: Mostrar un missatge emergent quan es fa clic en un botó
+            const alertButton = document.getElementById('alertButton');
+            alertButton.addEventListener('click', () => {
+                alert('Gràcies per visitar el meu portafolis!');
+            });
+               
+
             });
     </script>
 </body>
