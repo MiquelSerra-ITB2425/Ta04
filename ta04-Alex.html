@@ -72,8 +72,8 @@
             </ul>
         </div>
         <div class="container-form">
-            <button class="toggle-form">Contacta'ns</button>
-            <form action="#" method="post" class="hidden">
+            <button class="toggle-form" id="toggleFormButton">Contacta'ns</button>
+            <form action="#" method="post" class="hidden" id="contactForm">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
                 
@@ -98,6 +98,30 @@
 
                 toggleButton.addEventListener('click', () => {
                     form.classList.toggle('hidden');
+                });
+
+                // Funcionalitat 1: Desplegable del formulari (ja existeix)
+                const toggleButton = document.getElementById('toggleFormButton');
+                const form = document.getElementById('contactForm');
+                toggleButton.addEventListener('click', () => {
+                    form.classList.toggle('hidden');
+                });
+
+                // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'una secció
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    section.addEventListener('mouseenter', () => {
+                        section.style.backgroundColor = '#f0f0f0';
+                    });
+                    section.addEventListener('mouseleave', () => {
+                        section.style.backgroundColor = '';
+                    });
+                });
+
+                // Funcionalitat 3: Mostrar un missatge emergent quan es fa clic en un botó
+                const alertButton = document.getElementById('alertButton');
+                alertButton.addEventListener('click', () => {
+                    alert('Gràcies per visitar el meu portafolis!');
                 });
             });
     </script>
