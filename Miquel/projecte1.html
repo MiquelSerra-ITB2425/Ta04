@@ -2,12 +2,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleBRT.css">
+    <link rel="stylesheet" href="../Styles/styleBRT.css">
 </head>
 <main>
         <section class="inici">
             <h1>Hello World!</h1>
-            <p>va ser el meu primer projecte a</p>
-            <img src="helloworld.png" alt="Imagen de fondo">
+            <p>Va ser el meu primer projecte amb Python, on vaig fer que la terminal printés "Hello World!". Vaig coneixer la comanda basica de print, que es essencial a l'hora d'utilitzar Python.</p> 
+            <p>Tot seguit d'aquest projecte vaig fer un script en el qual la terminal interactua amb l'usuari, que es un pas mes en la complexitat de Python.</p>
+            <img src="../Img/helloworld.png" alt="helloworld">
+
         </section>
 </main>
+ <footer>
+        <p> Contacte: miquel.serra.7e8@itb.cat</p>
+        <div class="container-form">
+            <button class="toggle-form">Contacta'ns</button>
+            <form action="#" method="post" class="hidden">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="missatge">Missatge:</label>
+                <textarea id="missatge" name="missatge" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggleButton = document.querySelector('.toggle-form');
+                const form = document.querySelector('.container-form form');
+    
+                toggleButton.addEventListener('click', () => {
+                    form.classList.toggle('hidden');
+                });
+            });
+        </script>
+    </footer>
