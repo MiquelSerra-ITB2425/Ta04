@@ -100,14 +100,15 @@
                     form.classList.toggle('hidden');
                 });
 
-                // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'una secció
-                const sections = document.querySelectorAll('section');
-                sections.forEach(section => {
-                    section.addEventListener('mouseenter', () => {
-                        section.style.backgroundColor = '#f0f0f0';
+
+                // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'un projecte
+                const projectes = document.querySelectorAll('.projecte, .detalls-projecte');
+                projectes.forEach(projecte => {
+                    projecte.addEventListener('mouseenter', () => {
+                        projecte.style.backgroundColor = '#f0f0f0';
                     });
-                    section.addEventListener('mouseleave', () => {
-                        section.style.backgroundColor = '';
+                    projecte.addEventListener('mouseleave', () => {
+                        projecte.style.backgroundColor = '';
                     });
                 });
 
@@ -116,6 +117,8 @@
                 alertButton.addEventListener('click', () => {
                     alert('Gràcies per visitar el meu portafolis!');
                 });
+
+                
             });
     </script>
 </body>
