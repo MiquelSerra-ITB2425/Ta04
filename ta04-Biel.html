@@ -1,8 +1,75 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/styleBRT.css">
+    <title>Página Personal de Biel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .toggle-form {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        #clock {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        #time {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        #date {
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +82,14 @@
         </nav>
     </header>
     <main>
+        <!-- Sección del reloj interactivo -->
+        <section id="clock">
+            <h1>Hora Actual</h1>
+            <p id="time">00:00:00</p>
+            <p id="date">Cargando fecha...</p>
+        </section>
+
+        <!-- Contenido original -->
         <section class="inici">
             <h1>Benvingut a la meva pàgina personal</h1>
             <p>Sóc Biel, estudiant de Ciberseguretat i anteriorment de Química Analítica i Control de Qualitat. M'apassiona la tecnologia, viatjar per tot el món, fer senderisme i provar nova gastronomia.</p>
@@ -53,11 +128,6 @@
                 <h3>Simulador d'atacs de phishing</h3>
                 <article>Desenvolupament d'un simulador d'atacs de phishing per a formar usuaris en el reconeixement de correus electrònics fraudulents i millorar la seva seguretat.</article>
             </div>
-            <div class="projecte-detalls">
-                <h3>Monitorització de xarxa local</h3>
-                <p class="descripcio">Aquest projecte consisteix en la creació d'un sistema per monitoritzar el trànsit d'una xarxa local i detectar possibles amenaces de seguretat.</p>
-                <p class="tecnologies">Tecnologies utilitzades: Wireshark, Python, Network Sniffing.</p>
-            </div>
         </section>
     </main>
 
@@ -88,20 +158,47 @@
             </form>
         </div>
         <p>&copy; 2024 Biel. Tots els drets reservats.</p>
-        </footer>
-            
-        </footer>
-        <!-- Añade el script aquí -->
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const toggleButton = document.querySelector('.toggle-form');
-                const form = document.querySelector('.container-form form');
+    </footer>
 
-                toggleButton.addEventListener('click', () => {
-                    form.classList.toggle('hidden');
-                });
+    <!-- Scripts -->
+    <script>
+        // Reloj interactivo
+        function updateClock() {
+            const now = new Date();
+
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+
+            document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+
+            const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+            const dayName = days[now.getDay()];
+            const day = now.getDate();
+            const monthName = months[now.getMonth()];
+            const year = now.getFullYear();
+
+            document.getElementById('date').textContent = `${dayName}, ${day} de ${monthName} de ${year}`;
+
+            const r = Math.floor((seconds / 59) * 255);
+            const g = Math.floor((minutes / 59) * 255);
+            const b = Math.floor((hours / 23) * 255);
+            document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Mostrar/ocultar formulario
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.querySelector('.toggle-form');
+            const form = document.querySelector('.container-form form');
+
+            toggleButton.addEventListener('click', () => {
+                form.classList.toggle('hidden');
             });
-        </script>
+        });
+    </script>
 </body>
 </html>
-
