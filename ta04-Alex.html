@@ -98,51 +98,24 @@
     </footer>
     <!-- Añade el script aquí -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const toggleButton = document.querySelector('.toggle-form');
-            const form = document.querySelector('.container-form form');
-            const themeToggle = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+        form.classList.toggle('hidden');
+    });
 
-            toggleButton.addEventListener('click', () => {
-                form.classList.toggle('hidden');
-            });
-
-            themeToggle.addEventListener('click', () => {
-                document.body.classList.toggle('dark-theme');
-                document.querySelector('header').classList.toggle('dark-theme');
-                document.querySelectorAll('nav ul li a').forEach(el => el.classList.toggle('dark-theme'));
-                document.querySelector('main').classList.toggle('dark-theme');
-                document.querySelector('footer').classList.toggle('dark-theme');
-                document.querySelector('form').classList.toggle('dark-theme');
-                document.querySelector('.toggle-form').classList.toggle('dark-theme');
+    document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
         });
+    });
 
-        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        document.querySelector('form').addEventListener('submit', function (e) {
-            const nom = document.getElementById('nom');
-            const email = document.getElementById('email');
-            const missatge = document.getElementById('missatge');
-
-            if (!nom.value) {
-                alert('El camp Nom és obligatori.');
-                e.preventDefault();
-            } else if (!email.value) {
-                alert('El camp Correu electrònic és obligatori.');
-                e.preventDefault();
-            } else if (!missatge.value) {
-                alert('El camp Missatge és obligatori.');
-                e.preventDefault();
-            }
-        });
+    document.querySelector('form').addEventListener('submit', function (e) {
+        const nom = document.getElementById('nom');
+        const email = document.getElementById('email');
+        const missatge = document.getElementById('missatge');
+    });
     </script>
 
     <button id="theme-toggle">Canvia Tema</button>
