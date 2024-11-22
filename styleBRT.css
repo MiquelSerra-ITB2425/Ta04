@@ -143,7 +143,7 @@ main {
 .projecte img {
     border-radius: 10px;
     width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-    max-width: 300px; /* Ajusta este valor según el tamaño deseado */
+    max-width: 1000px; /* Ajusta este valor según el tamaño deseado */
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
