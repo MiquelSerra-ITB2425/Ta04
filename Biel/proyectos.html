@@ -52,9 +52,10 @@
 
         .highlighted-project img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto; /* Mantén la proporción */
+            max-height: 400px; /* Limita el alto máximo para evitar deformaciones */
             border-radius: 8px;
+            object-fit: cover; /* Asegura que la imagen ocupe todo el espacio asignado */
         }
 
         .highlighted-project:hover {
@@ -112,8 +113,6 @@
             <div class="highlighted-project">
                 <a href="simulador-phishing.html">
                     <img src="../Img/proyectos/phishing.png" alt="Simulador d'Atacs de Phishing">
-                    
-                    
                 </a>
                 <p>Simulador de Phishing</p>
             </div>
