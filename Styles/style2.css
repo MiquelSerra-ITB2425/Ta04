@@ -133,11 +133,4 @@ footer .social-links a {
     right: 10px;
 }
 
-/* Estil per a les imatges dels projectes detallats */
-.project-image {
-    width: 50%; /* Ajusta aquest valor segons sigui necessari */
-    height: auto; /* Manté la proporció de la imatge */
-    display: block;
-    margin: 0 auto; /* Centra la imatge */
-    border-radius: 10px; /* Opcional: afegeix cantonades arrodonides */
-}
+
