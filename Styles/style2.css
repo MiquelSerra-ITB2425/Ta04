@@ -1,20 +1,67 @@
 /* General */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: white;
     padding: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav a {
-    color: #fff;
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
     margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main sections */
+main {
+    margin: 2rem;
+}
+
+article {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 0.5rem;
     text-decoration: none;
 }
 
@@ -51,6 +98,8 @@ header nav a {
     object-fit: cover;
     margin-bottom: 1rem;
     border-radius: 10px;
+    display: block; /* Afegeix aquesta línia */
+    margin: 0 auto; /* Afegeix aquesta línia */
 }
 
 .carousel-slide h2 {
