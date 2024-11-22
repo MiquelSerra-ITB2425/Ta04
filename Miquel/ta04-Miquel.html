@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleBRT.css">
+    <link rel="stylesheet" href="../Styles/styleBRT.css">
 </head>
 <body>
     <header>
@@ -57,10 +57,9 @@
     </article>
 
     <footer>
-        <p> Contacte: miquel.serra.7e8@itb.cat</p>
         <div class="container-form">
-            <button class="toggle-form">Contacta'ns</button>
-            <form action="#" method="post" class="hidden">
+            <button class="toggle-form" id="toggleFormButton">Contacta'ns</button>
+            <form action="#" method="post" class="hidden" id="contactForm">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
                 
@@ -77,10 +76,28 @@
             document.addEventListener('DOMContentLoaded', () => {
                 const toggleButton = document.querySelector('.toggle-form');
                 const form = document.querySelector('.container-form form');
-    
+
                 toggleButton.addEventListener('click', () => {
                     form.classList.toggle('hidden');
                 });
+            // Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'un projecte
+            const projectes = document.querySelectorAll('.projecte, .detalls-projecte');
+            projectes.forEach(projecte => {
+                projecte.addEventListener('mouseenter', () => {
+                    projecte.style.backgroundColor = '#f0f0f0';
+                });
+                projecte.addEventListener('mouseleave', () => {
+                    projecte.style.backgroundColor = '';
+                });
+            });
+
+            // Funcionalitat 3: Mostrar un missatge emergent quan es fa clic en un botó
+            const alertButton = document.getElementById('alertButton');
+            alertButton.addEventListener('click', () => {
+                alert('Gràcies per visitar el meu portafolis!');
+            });
+               
+
             });
         </script>
     </footer>
