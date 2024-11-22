@@ -142,9 +142,17 @@ main {
 }
 .projecte img {
     border-radius: 10px;
-    width: 100%; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-    max-width: 1000px; /* Ajusta este valor según el tamaño deseado */
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    max-width: 600px; /* Imagen más grande */
     height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
+
+/* Ajuste responsivo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .projecte img {
+        max-width: 100%; /* Permite que ocupe todo el ancho disponible */
+    }
 }
 
 .projecte h3 {
