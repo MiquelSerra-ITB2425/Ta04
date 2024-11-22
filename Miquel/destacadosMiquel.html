@@ -7,6 +7,7 @@
     <meta name="author" content="Alex">
     <title>Proyectos Destacados</title>
     <link rel="stylesheet" href="../Styles/style2.css">
+    <script src="../Javascript/Script.js"></script>
 </head>
 <body>
     <!-- Cabecera -->
@@ -25,6 +26,11 @@
 
     <!-- Contenido principal -->
     <main>
+        <article>
+            <h1>Bienvenido a nuestra página de proyectos</h1>
+            <p>Descubre los proyectos más innovadores y destacados en nuestra plataforma.</p>
+        </article>
+
         <!-- Carrusel (Sección Principal) -->
         <section class="carousel">
             <button class="carousel-button prev">&lt;</button>
@@ -54,34 +60,26 @@
             </div>
             <button class="carousel-button next">&gt;</button>
         </section>
-
-        <!-- Artículo (Introducción) -->
-        <article>
-            <h1>Bienvenido a nuestra página de proyectos</h1>
-            <p>Descubre los proyectos más innovadores y destacados en nuestra plataforma.</p>
-        </article>
-
-        <!-- Información adicional (Aside) -->
-        <aside>
-            <h2>Enlaces útiles</h2>
-            <ul>
-                <li><a href="#about">Sobre nosotros</a></li>
-                <li><a href="#help">Ayuda</a></li>
-                <li><a href="#contact">Contáctanos</a></li>
-            </ul>
-        </aside>
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Alex. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-        </div>
+        <p>&copy; 2024 Miquel. Tots els drets reservats.</p>
+        <div class="container-form">
+            <button class="toggle-form" id="toggleFormButton">Contacta'ns</button>
+            <form action="#" method="post" class="hidden" id="contactForm">
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+                
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="missatge">Missatge:</label>
+                <textarea id="missatge" name="missatge" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
     </footer>
-
-    <script src="../Javascript/Script.js"></script>
+    
 </body>
 </html>
