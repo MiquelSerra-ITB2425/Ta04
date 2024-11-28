@@ -14,6 +14,11 @@ body {
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -222,6 +227,11 @@ footer .social-links a {
     transform: scale(1.1);
 }
 
+.projecte.dark-mode, .detalls-projecte.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
 /* Estils per al formulari de contacte */
 form {
     background-color: #f9f9f9;
@@ -263,5 +273,7 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+
 
 
