@@ -10,9 +10,25 @@
             const params = new URLSearchParams(window.location.search);
             const projectId = params.get("id");
             const projectData = {
-                1: { title: "ITBmon", description: "Detalles completos del Proyecto A.", image: "../Img/ITBmon_Final.png" },
-                2: { title: "Proyecto B", description: "Detalles completos del Proyecto B.", image: "../Img/proyectos/monitoritzacio-xarxa.png" },
-                3: { title: "Proyecto C", description: "Detalles completos del Proyecto C.", image: "../Img/proyectos/simulador-phishing.png" },
+                1: { 
+                    title: "ITBmon", 
+                    description: `En este proyecto desarrollamos un juego inspirado en Pokémon, llamado ITBmon, que mezcla aventura, estrategia y narrativa en un entorno escolar. El/la protagonista es un estudiante que llega al instituto en Pueblo Caracú, donde descubre a Rotom, un Pokémon perdido, y se enfrenta a una organización llamada Team Glitchclaw. Este equipo está formado por estudiantes expertos en IA que crearon una inteligencia artificial llamada GlitchClaw, con ambiciones de dominar el mundo Pokémon.
+
+                    A lo largo del juego, el jugador vivirá momentos clave como ataques de Pokémon, enfrentamientos contra líderes del equipo enemigo y la interacción con otros personajes importantes, como compañeros y rivales. Además, contará con objetos personalizados, mapas detallados y escenas animadas que enriquecen la experiencia.
+
+                    El juego está diseñado para ofrecer una experiencia interactiva única, combinando mecánicas clásicas de Pokémon con elementos innovadores. Nuestro objetivo es captar tanto a los fanáticos de la saga como a nuevos jugadores, presentando un proyecto atractivo y con un gran potencial para desarrollarse comercialmente.`,
+                    image: "../Img/ITBmon_Final.png" 
+                },
+                2: { 
+                    title: "Proyecto B", 
+                    description: "Detalles completos del Proyecto B.", 
+                    image: "../Img/proyectos/monitoritzacio-xarxa.png" 
+                },
+                3: { 
+                    title: "Proyecto C", 
+                    description: "Detalles completos del Proyecto C.", 
+                    image: "../Img/proyectos/simulador-phishing.png" 
+                },
             };
 
             const project = projectData[projectId] || { title: "Proyecto no encontrado", description: "No se pudo cargar la información.", image: "" };
