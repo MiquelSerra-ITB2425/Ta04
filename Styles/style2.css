@@ -66,6 +66,11 @@ aside {
     border: 1px solid #ccc;
 }
 
+/* Ocultar formulario por defecto */
+.hidden {
+    display: none;
+}
+
 /* Footer */
 footer {
     background-color: #333;

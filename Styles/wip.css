@@ -1,0 +1,97 @@
+/* Reseteamos márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Fondo gris claro */
+    text-align: center;
+    color: #333;
+    padding: 50px;
+}
+
+/* Estilo para el contenedor */
+.container {
+    background-color: #ffeb3b; /* Fondo amarillo similar al color de señales de advertencia */
+    border: 5px solid #ff9800; /* Borde naranja para simular un área de obra */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo de la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ff9800; /* Borde naranja para la imagen */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #f44336; /* Rojo para simular advertencia */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Párrafo */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Estilo para el borde de la zona de construcción */
+.container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Coner_ruler.svg/500px-Coner_ruler.svg.png') repeat-x;
+    margin-bottom: 20px;
+}
+
+/* Estilo de advertencia con línea punteada */
+.container .warning {
+    background-color: #ff9800;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff9800; /* Fondo de los botones */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #f44336; /* Rojo cuando pasa el ratón */
+}
