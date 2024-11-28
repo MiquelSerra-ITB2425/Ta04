@@ -1,17 +1,17 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/style2.css">
+    <link rel="stylesheet" href="../Styles/style4.css">
     <script src="../Javascript/Script.js"></script>
     <meta name="author" content="Miquel">
     <title>Sobre mi</title>
-
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../Img/logo.png" alt="Logo del sitio" />
+            <img src="../Img/logo.png" alt="Logo del sitio">
         </div>
         <nav> 
             <ul>
@@ -24,45 +24,55 @@
     <main>
         <section class="inici">
             <h1>Sobre mi</h1>
-            <p>Em dic Miquel vaig neixer al 2001 i desde fa poc he decidit canviar de sector professional, estic aprenent molt d'informatica al CFGS ASIX de l'ITB i en aquest document presento alguns dels projectes que he fet en aquest temps </p>
+            <p>Em dic Miquel, vaig neixer al 2001 i des de fa poc he decidit canviar de sector professional. Estic aprenent molt d'informàtica al CFGS ASIX de l'ITB i en aquest document presento alguns dels projectes que he fet fins ara.</p>
             <img src="../Img/ordinador.png" alt="ordinador">
         </section>
 
         <section class="sobre-mi">
             <h2>Habilitats i interessos</h2>
             <p>Algunes de les meves habilitats i interessos:</p>
-            <ul class="habilitats">
-                <li>Primerament crec que m'adapto bastant be al canvi, i no em fa por canviar les coses</li>
-                <li>Sempre m'han agradat els idiomes i he tingut facilitat per apendre'n</li>
-                <li>De moment poc, pero cada vegada se programar més</li>
-            </ul>
-            <br>
-            <ul class="interessos">
-                <li>M'interessa la tecnología</li>
-                <li>La política i l'economia</li>
-                <li>Coneixer l'historia dels països que visito</li>
-            </ul>
-        <br>
+            <div class="habilitats-interessos">
+                <div class="habilitats">
+                    <h3>Habilitats:</h3>
+                    <ul>
+                        <li>Crec que m'adapto bé al canvi.</li>
+                        <li>M'agraden els idiomes i he tingut facilitat per aprendre'n.</li>
+                        <li>Cada vegada sé més sobre programació.</li>
+                    </ul>
+                </div>
+                <div class="interessos">
+                    <h3>Interessos:</h3>
+                    <ul>
+                        <li>M'interessa la tecnologia.</li>
+                        <li>La política i l'economia.</li>
+                        <li>Coneixer l'història dels països que visito.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
         <section class="projectes">
             <h2>Projectes d'aprenentatge de programació</h2>
-            <div class="projecte">
-                <h3><li><a href="../Miquel/projecte1.html">Hello World!</a></li></h3>
-                <div>El meu primer script de Python, on vaig apendre com fer que Python saludés al mon.</div>
+            <div class="projectes-container">
+                <div class="projecte">
+                    <h3><a href="../Miquel/projecte1.html">Hello World!</a></h3>
+                    <p>El meu primer script de Python, on vaig aprendre com fer que Python saludés al món.</p>
+                </div>
+                <div class="projecte">
+                    <h3><a href="../Miquel/wip.html">Ets major d'edat?</a></h3>
+                    <p>Va ser el primer script interactiu que vaig fer amb Python, preguntant a l'usuari a través de la terminal quants anys tenia.</p>
+                </div>
+                <div class="projecte">
+                    <h3><a href="../Miquel/wip.html">S'ha actualitzat?</a></h3>
+                    <p>Va ser un gran pas en el meu aprenentatge de Python, un script que m'enviava una notificació al mòbil cada vegada que hi havia un canvi en una pàgina web.</p>
+                </div>
             </div>
-            <div class="Projecte">
-                <h3><li><a href="../Miquel/wip.html">Ets major d'edat?</a></li></h3>
-                <div>Va ser el primer script interactiu que vaig fer amb Python, on preguntava a l'usuari a través de la terminal quants anys tenia, i en funció de la resposta la terminal et deia si ets o no major d'edat.</div>
-            </div>
-            <div class="projecte">
-                <h3><li><a href="../Miquel/wip.html">S'ha actualitzat?</a></li></h3>
-                <div>Va ser el següent gran pas en el meu aprenentatge de Python, on vaig fer un script que m'enviava una notificació al mòvil cada vegada que hi havia un canvi en una pàgina web.</div>
-            </div>
-    </main>
         </section>
+    </main>
+
     <footer>
         <div class="container-form">
-            <button class="toggle-form" id="toggleFormButton">Contacta'ns</button>
+            <button class="toggle-form">Contacta'ns</button>
             <form action="#" method="post" class="hidden" id="contactForm">
                 <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required>
@@ -76,8 +86,8 @@
                 <button type="submit">Enviar</button>
             </form>
         </div>
-    <p> Contacte: miquel.serra.7e8@itb.cat</p>
-    <p>&copy; 2024 Miquel. Tots els drets reservats.</p>
+        <p>Contacte: miquel.serra.7e8@itb.cat</p>
+        <p>&copy; 2024 Miquel. Tots els drets reservats.</p>
     </footer>
 </body>
 </html>
