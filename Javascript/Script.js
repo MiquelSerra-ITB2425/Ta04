@@ -58,5 +58,12 @@ alertButton.addEventListener('click', () => {
     alert('Gràcies per visitar el meu portafolis!');
 });
    
+// Funcionalitat 4: Mode Fosc
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    projectes.forEach(projecte => {
+        projecte.classList.toggle('dark-mode');
+    });
 
 });
