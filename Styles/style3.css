@@ -55,18 +55,28 @@ header nav ul li a:hover {
 main {
     padding: 4rem 2rem 2rem; /* Espacio superior para que no se solape con el header fijo */
     flex: 1;
+    text-align: center; /* Centra todo el contenido del main */
 }
 
 article {
-    text-align: center;
     margin: 2rem 0;
 }
 
+article h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Aseguramos que el selector de proyectos tenga flexbox para centrar los elementos */
 .project-selector {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
     gap: 1rem;
+    justify-content: center; /* Centra los proyectos horizontalmente */
+    align-items: center; /* Centra los proyectos verticalmente si la altura es mayor */
+    flex-wrap: wrap; /* Permite que los proyectos se acomoden bien en pantallas pequeñas */
 }
 
 .project {
@@ -78,6 +88,10 @@ article {
     transition: transform 0.3s ease-in-out;
     background-color: #fff;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes y el texto dentro del proyecto */
+    justify-content: center; /* Asegura que el contenido esté centrado */
 }
 
 .project img {
@@ -112,15 +126,4 @@ footer {
 footer p {
     margin: 0;
     font-size: 1rem;
-}
-
-/* Añadir más estilo al artículo */
-article h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-top: 20px;
-}
-
-.project-selector li {
-    list-style: none;
 }
