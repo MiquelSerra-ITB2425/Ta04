@@ -1,3 +1,5 @@
+///Destacados///
+
 document.addEventListener("DOMContentLoaded", () => {
     const track = document.querySelector(".carousel-track");
     const slides = Array.from(track.children);
@@ -25,6 +27,36 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+
     // Adjust slide positions on window resize
     window.addEventListener("resize", updateSlidePosition);
+});
+
+    ///Formulari Desplegable ///
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.toggle-form');
+    const form = document.querySelector('.container-form form');
+
+    toggleButton.addEventListener('click', () => {
+        form.classList.toggle('hidden');
+    });
+// Funcionalitat 2: Canvi de color de fons en passar el ratolí per sobre d'un projecte
+const projectes = document.querySelectorAll('.projecte, .detalls-projecte');
+projectes.forEach(projecte => {
+    projecte.addEventListener('mouseenter', () => {
+        projecte.style.backgroundColor = '#f0f0f0';
+    });
+    projecte.addEventListener('mouseleave', () => {
+        projecte.style.backgroundColor = '';
+    });
+});
+
+// Funcionalitat 3: Mostrar un missatge emergent quan es fa clic en un botó
+const alertButton = document.getElementById('alertButton');
+alertButton.addEventListener('click', () => {
+    alert('Gràcies per visitar el meu portafolis!');
+});
+   
+
 });
