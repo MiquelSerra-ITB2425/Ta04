@@ -171,6 +171,100 @@ main {
 }
 
 /* Footer */
+
 footer {
     background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#contact-form {
+    display: none;
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#contact-form button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #666;
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
 }
