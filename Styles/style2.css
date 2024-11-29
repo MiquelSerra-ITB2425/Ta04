@@ -273,3 +273,25 @@ form button {
 form button:hover {
     background-color: #555;
 }
+
+/* Estilo de los botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #000e5c; /* Fondo de los botones */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #000cbb; /* Rojo cuando pasa el ratón */
+}
